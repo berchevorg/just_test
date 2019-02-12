@@ -1,3 +1,9 @@
+terraform {
+  backend "atlas" {
+    name = "berchevorg/just_test"
+  }
+}
+
 resource "random_pet" "name" {
   length    = "1"
   separator = "-"
